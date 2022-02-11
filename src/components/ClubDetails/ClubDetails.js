@@ -28,7 +28,7 @@ const ClubDetails = observer(() => {
         return validatedValue;
     }
 
-    const { name, address, open, close, phone, website, email, imgURL } = store.clubDetails;
+    const { name, description, open, close, phone, website, email, imgURL } = store.clubDetails;
 
     return (
         <Segment className="mainSegment">
@@ -40,7 +40,7 @@ const ClubDetails = observer(() => {
                         <Form.Group grouped>
                             <Form.Field control="input" value={name} label="Club Name" name="name" onChange={(e) => handleInputChange(e)} />
                             <Form.Field control="input" value={email} label="Email Address" name="email" onChange={(e) => handleInputChange(e)} />
-                            <Form.Field control="input" value={address} label="Address" name="address" onChange={(e) => handleInputChange(e)} />
+                            <Form.Field control="input" value={description} label="Description" name="description" onChange={(e) => handleInputChange(e)} />
                             <Form.Group style={{ padding: '8px' }}>
                                 <Form.Field control="input" type="time" value={open} label="Opens At" name="open" onChange={(e) => handleInputChange(e)} />
                                 <Form.Field control="input" type="time" value={close} label="Closes At" name="close" onChange={(e) => handleInputChange(e)} />
@@ -52,7 +52,7 @@ const ClubDetails = observer(() => {
                     </Form>
                     </Segment>
                 </Grid.Column>
-                <Grid.Column width={6} style={{ display: 'flex', justifyContent: 'center', paddingBottom: '10px'}}>
+                <Grid.Column width={6} className="phoneColumn">
                     <div className="phoneFrame"></div>
                     <Segment className="previewSegment club">
                          <div className="preview">

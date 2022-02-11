@@ -37,7 +37,7 @@ const UserDetails = observer(() => {
                     </Form>
                     </Segment>
                 </Grid.Column>
-                <Grid.Column width={6} style={{ display: 'flex', justifyContent: 'center', paddingBottom: '10px'}}>
+                <Grid.Column width={6} className="phoneColumn">
                     <div className="phoneFrame"></div>
                     <Segment className="previewSegment user">
                         <div className="preview">

@@ -19,7 +19,7 @@ let StoreProvider;
         const store = useLocalObservable(() => ({
           clubDetails: {
             name: '',
-            address: '',
+            description: '',
             open: '',
             close: '',
             phone: '',

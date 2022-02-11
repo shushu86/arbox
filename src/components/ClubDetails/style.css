@@ -73,9 +73,7 @@ a:any-link {
 .clubDetailsBody > div:nth-child(even) {
     background-color: #ffffff;
 }
-/* .clubDetailsBody > div:nth-child(odd) {
-    background-color: lightgrey;
-} */
+
 .clubDetailsBody .clubImg {
     width: 50px;
     height: 50px;
@@ -121,5 +119,10 @@ a:any-link {
 @media only screen and (max-width: 992px) {
     .clubDetailsHeader {
         margin-top: 0px;
+    }
+
+    .shortUnderline {
+        width: 90%;
+        margin: 0px 0px 0px 0%;
     }
 }

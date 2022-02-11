@@ -56,6 +56,12 @@ i {
     align-items: center;
 }
 
+.ui.grid>.row>[class*="six wide"].column.phoneColumn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .appHeader {
     display: flex;
     justify-content: space-around;

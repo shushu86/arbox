@@ -32,7 +32,7 @@ const DetailsBody = ({ userDetails, clubDetails }) => {
                 <div>{clubDetails.imgURL ? <img className="clubImg" src={clubDetails.imgURL} alt="Club" /> : 'N/A'}</div>
                 <div style={{ flexGrow: '1' }}>
                     <div>{clubDetails.name}</div>
-                    <div style={{ fontWeight: 'bold' }}>{timeHelper ? <span style={{ color: 'green' }}>Active</span> : <span style={{ color: 'red' }}>Closed</span>}</div>
+                    <div style={{ fontWeight: 'bold' }}>{timeHelper ? <span style={{ color: 'green' }}>Active</span> : <span style={{ color: 'red' }}>Inactive</span>}</div>
                 </div>
                 <div>
                     { clubDetails.phone && 
