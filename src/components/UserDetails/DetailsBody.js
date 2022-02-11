@@ -14,13 +14,13 @@ const DetailsBody = ({ userDetails, clubDetails }) => {
         const timeNowM = new Date().getMinutes().toString();
         
         const timeNow = timeNowH + ':' + timeNowM;
-        console.log(timeNow)
+      
         if(clubDetails.open <= timeNow && clubDetails.close >= timeNow) 
             return true;
         
         return false;
     }
-    // .replace(/^0+/, '')
+
     const timeHelper = isActive();
 
     return (
