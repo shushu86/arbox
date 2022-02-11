@@ -8,7 +8,7 @@ const DetailsHeader = ({ userDetails }) => {
                 <Icon name="search"  size="big" />
                 <Icon name="bell outline" size="big" />
             </div>
-            <div className="userIcon">
+            <div className="appIcon">
                 <div>{userDetails.imgURL ? <img src={userDetails.imgURL} alt="user"  /> : userDetails.firstName.substr(0,1) + userDetails.lastName.substr(0,1)}</div>
             </div>
             <div className="userLabel big">

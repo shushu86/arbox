@@ -24,6 +24,15 @@ i {
     z-index: 1;
 }
 
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    height: 100%;
+}
+
 .previewSegment {
     height: 560px; 
     border-radius: 8%;
@@ -38,6 +47,64 @@ i {
 .previewSegment.user {
     background-color: rgb(95 203 128);
 }
+
+.userClubDetails div:nth-child(1), .userPersonalDetails div:nth-child(1) {
+    margin-right: 10px;
+}
+.userClubDetails, .userPersonalDetails {
+    display: flex;
+    align-items: center;
+}
+
+.appHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a518f;
+    
+    padding: 15px;
+    margin: 0;
+}
+.appHeader a{
+    color: white;
+    font-size: 20pt;
+    transition: .3s;
+}
+.appHeader a:hover{
+    color: rgb(111 229 127) !important;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.appHeader a:visited{
+    color: white;
+}
+
+
+.appIcon {
+    width: 100px;
+    height: 100px;
+    background-color: #00518f;
+    border-radius: 100%;
+    font-size: 32pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.appIcon i {
+    font-size: 1.2em !important;
+}
+.appIcon img {
+    border-radius: 100%;
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+}
+
 
 @media only screen and (max-width: 767px) {
     .ui.container {

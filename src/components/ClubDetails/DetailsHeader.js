@@ -4,16 +4,16 @@ import { Icon, Menu} from 'semantic-ui-react'
 const DetailsHeader = ({ clubDetails }) => {
     return (
         <div className="clubDetailsHeader">
-            <div className="clubIcon">
+            <div className="appIcon">
                 <div>{clubDetails.imgURL ? <img src={clubDetails.imgURL} alt="Club" /> : <Icon name="building" size="large" circular color="grey" />}</div>
             </div>
-            <div className="userLabel big">
+            <div className="clubLabel big">
                 {clubDetails.name}
             </div>
-            <div className="userLabel small">
+            <div className="clubLabel small">
                 <div>{`Open ${clubDetails.open} - ${clubDetails.close}`}</div> 
             </div>
-            <div className="userLabel extra-small">
+            <div className="clubLabel extra-small">
                 <div>{clubDetails.address}</div>
             </div>
             <div className="clubContact">
@@ -32,9 +32,9 @@ const DetailsHeader = ({ clubDetails }) => {
                 <div>
                     { clubDetails.website && 
                         <Menu.Item
-                            href={'http://' + clubDetails.website}
+                            href={'https://' + clubDetails.website.replace('https://','').replace('http://','')}
                             position="right"
-                            target="self"
+                            target="_blank"
                             >
                             <Icon name="world" size="big" className={!clubDetails.website ? 'disabled' : '' }  />
                         </Menu.Item>

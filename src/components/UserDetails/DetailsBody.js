@@ -7,7 +7,7 @@ const DetailsBody = ({ userDetails, clubDetails }) => {
 
     const birthdaySplit = userDetails.birthday.split('-');
 
-    const birthdayString = month[birthdaySplit[1]] + ',' + birthdaySplit[2] + ',' + birthdaySplit[0];
+    const birthdayString = month[birthdaySplit[1]-1] + ',' + birthdaySplit[2] + ',' + birthdaySplit[0];
 
     const isActive = () => {
         const timeNowH = new Date().getHours().toString();
