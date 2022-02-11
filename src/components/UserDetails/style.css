@@ -81,3 +81,9 @@
 .userLabel.small {
     font-size: 15pt;
 }
+
+@media only screen and (max-width: 992px) {
+    .detailsHeader {
+        margin-top: 0px;
+    }
+}
