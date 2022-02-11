@@ -1,0 +1,183 @@
+
+a:any-link {
+    color: inherit;
+}
+
+.clubContact {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    z-index: 2;
+}
+
+.clubBodyToggle {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12pt;
+    align-items: center;
+    cursor: pointer;
+}
+
+.shortUnderline {
+    width: 60%;
+    border-bottom: solid white 2px;
+    margin: 0px 0px 0px 20%;
+    padding-top: 3px;
+}
+
+.clubContact i {
+    background-color: #ffffff;
+}
+
+.clubContact i:not(.disabled):hover {
+    cursor: pointer;
+}
+
+.clubDetailsHeader  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    line-height: 8px;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.clubIcon {
+    width: 100px;
+    height: 100px;
+    background-color: #00518f;
+    border-radius: 100%;
+    font-size: 32pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.clubIcon i {
+    font-size: 1.2em !important;
+}
+.clubIcon img {
+    border-radius: 100%;
+    width: 100px;
+    height: auto;
+    max-height: 100px;
+}
+.clubDetailsBody {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    z-index: 2;
+}
+
+.clubDetailsBody > div {
+    padding: 10px;
+}
+.clubDetailsBody > div:nth-child(1) {
+    background-color: #1a518f;
+    color: white;
+}
+.clubDetailsBody > div:nth-child(2) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.clubDetailsBody > div:nth-child(3) {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.clubDetailsBody > div:nth-child(even) {
+    background-color: #ffffff;
+}
+/* .clubDetailsBody > div:nth-child(odd) {
+    background-color: lightgrey;
+} */
+.clubDetailsBody .clubImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.clubDetailsBody i {
+    background-color: #ebe9e9 
+}
+
+.clubDetailsBody .clubDetailsBodyHeader i {
+    background-color: lightgray; 
+}
+
+.clubDetailsBodyHeader {
+    display: flex;
+    align-items: center;
+}
+
+.clubDetailsBodyHeader div:nth-child(1){
+    flex-grow: 1;
+}
+
+.userLabel {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.userLabel.big {
+    font-size: 18pt;
+}
+
+.userLabel.small {
+    font-size: 15pt;
+}
+
+.userLabel.extra-small {
+    font-size: 13pt;
+    font-weight: normal;
+}
+
+.userClubDetails div:nth-child(1), .userPersonalDetails div:nth-child(1) {
+    margin-right: 10px;
+}
+.userClubDetails, .userPersonalDetails {
+    display: flex;
+    align-items: center;
+}
+
+.appHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a518f;
+    
+    padding: 15px;
+    margin: 0;
+}
+.appHeader a{
+    color: white;
+    font-size: 20pt;
+    transition: .3s;
+}
+.appHeader a:hover{
+    color: rgb(111 229 127) !important;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.appHeader a:visited{
+    color: white;
+}

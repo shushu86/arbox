@@ -1,0 +1,18 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  background-color: #fff;   
+}
+
+.phoneFrame {
+    background-image: url('../public/frame.png');
+    width: 438px;
+    height: 611px;
+    margin-left: -4px;
+    position: absolute;
+    background-repeat: round;
+    z-index: 1;
+}

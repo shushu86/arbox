@@ -1,0 +1,139 @@
+.detailsHeader  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.detailsHeader .searchNotification {
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.detailsHeader div:nth-child(1) i{
+    background-color: rgb(95 203 128);
+    color: white;
+    font-weight: 100;
+    opacity: 0.8;
+}
+.preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.userIcon {
+    width: 100px;
+    height: 100px;
+    background-color: #00518f;
+    border-radius: 100%;
+    font-size: 32pt;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.userIcon img {
+    border-radius: 100%;
+    width: 100px;
+    height: auto;
+}
+.detailsBody {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    z-index: 2;
+}
+
+.detailsBody > div {
+    padding: 15px;
+}
+.detailsBody > div:nth-child(1) {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.detailsBody > div:nth-child(4) {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.detailsBody > div:nth-child(even) {
+    background-color: #ebe9e9;
+}
+.detailsBody > div:nth-child(odd) {
+    background-color: lightgrey;
+}
+.detailsBody .clubImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.detailsBody i {
+    background-color: #ebe9e9 
+}
+
+.detailsBody .detailsBodyHeader i {
+    background-color: lightgray; 
+}
+
+.detailsBodyHeader {
+    display: flex;
+    align-items: center;
+}
+
+.detailsBodyHeader div:nth-child(1){
+    flex-grow: 1;
+}
+
+.userLabel {
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.userLabel.big {
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+.userLabel.small {
+    font-size: 15pt;
+}
+
+.userClubDetails div:nth-child(1), .userPersonalDetails div:nth-child(1) {
+    margin-right: 10px;
+}
+.userClubDetails, .userPersonalDetails {
+    display: flex;
+    align-items: center;
+}
+
+.appHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a518f;
+    
+    padding: 15px;
+    margin: 0;
+}
+.appHeader a{
+    color: white;
+    font-size: 20pt;
+    transition: .3s;
+}
+.appHeader a:hover{
+    color: rgb(111 229 127) !important;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.appHeader a:visited{
+    color: white;
+}
