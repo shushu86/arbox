@@ -3,18 +3,24 @@ import { Icon,Menu } from 'semantic-ui-react';
 
 const DetailsBody = ({ userDetails, clubDetails }) => {
     
+    const month= ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+    const birthdaySplit = userDetails.birthday.split('-');
+
+    const birthdayString = month[birthdaySplit[1]] + ',' + birthdaySplit[2] + ',' + birthdaySplit[0];
+
     const isActive = () => {
         const timeNowH = new Date().getHours().toString();
         const timeNowM = new Date().getMinutes().toString();
         
         const timeNow = timeNowH + ':' + timeNowM;
-        
-        if(clubDetails.open.replace(/^0+/, '') <= timeNow && clubDetails.close.replace(/^0+/, '') >= timeNow) 
+        console.log(timeNow)
+        if(clubDetails.open <= timeNow && clubDetails.close >= timeNow) 
             return true;
         
         return false;
     }
-
+    // .replace(/^0+/, '')
     const timeHelper = isActive();
 
     return (
@@ -51,8 +57,8 @@ const DetailsBody = ({ userDetails, clubDetails }) => {
             <div className="userPersonalDetails">
                 <div><Icon name="birthday cake" color="grey" size="large" /></div>
                 <div style={{ flexGrow: '1' }}>
-                    <div>Birthday</div>
-                    <div>{userDetails.birthday}</div>
+                    <div style={{ color: 'gray' }}>Birthday</div>
+                    <div>{birthdayString}</div>
                 </div>
             </div>
         </div>

@@ -7,6 +7,7 @@ body {
 i {
   background-color: #fff;   
 }
+
 .ui.segment.mainSegment {
     margin-top: 0px;
     border-top-right-radius: 0px;
@@ -29,7 +30,6 @@ i {
     width: 295px;
     min-width: 295px;
 }
-
 
 .previewSegment.club {
     background-color: #1a518f !important;
@@ -61,7 +61,7 @@ i {
         min-width: 250px;
     }
     .clubDetailsBody {
-        height: 22vh;
+        height: 20vh;
     }
     .detailsBody {
         height: 28vh;

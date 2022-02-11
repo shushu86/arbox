@@ -21,7 +21,7 @@ const UserDetails = observer(() => {
     const { firstName, lastName, birthday, imgURL, bio } = store.userDetails;
 
     return (
-        <Segment>
+        <Segment className="mainSegment">
         <Grid>
             <Grid.Row>
                 <Grid.Column width={10}>
