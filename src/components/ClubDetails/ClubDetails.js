@@ -31,7 +31,7 @@ const ClubDetails = observer(() => {
     const { name, address, open, close, phone, website, email, imgURL } = store.clubDetails;
 
     return (
-        <Segment>
+        <Segment className="mainSegment">
         <Grid>
             <Grid.Row>
                 <Grid.Column width={10}>
@@ -54,7 +54,7 @@ const ClubDetails = observer(() => {
                 </Grid.Column>
                 <Grid.Column width={6} style={{ display: 'flex', justifyContent: 'center', paddingBottom: '10px'}}>
                     <div className="phoneFrame"></div>
-                    <Segment style={{ height: '560px', backgroundColor: '#1a518f' , borderRadius: '8%', width: '75%'}}>
+                    <Segment className="previewSegment club">
                          <div className="preview">
                             <DetailsHeader clubDetails={store.clubDetails} />
                             <DetailsBody clubDetails={store.clubDetails} />

@@ -39,7 +39,7 @@ const UserDetails = observer(() => {
                 </Grid.Column>
                 <Grid.Column width={6} style={{ display: 'flex', justifyContent: 'center', paddingBottom: '10px'}}>
                     <div className="phoneFrame"></div>
-                    <Segment style={{ height: '560px', backgroundColor: 'rgb(95 203 128)' , borderRadius: '8%', width: '75%'}}>
+                    <Segment className="previewSegment user">
                         <div className="preview">
                             <DetailsHeader userDetails={store.userDetails} />
                             <DetailsBody userDetails={store.userDetails} clubDetails={store.clubDetails} />
