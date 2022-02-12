@@ -13,9 +13,6 @@ const DetailsHeader = ({ clubDetails }) => {
             <div className="clubLabel small">
                 <div>{clubDetails.description}</div> 
             </div>
-            {/* <div className="clubLabel extra-small">
-                <div>{clubDetails.address}</div>
-            </div> */}
             <div className="clubContact">
                 <div>
                     { clubDetails.phone && 

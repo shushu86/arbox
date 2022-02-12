@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Placeholder } from 'semantic-ui-react';
 
-const DetailsBody = ({ clubDetails }) => {
+const DetailsBody = () => {
     const [menuSelect, setMenuSelect] = useState('membership');
 
     return (

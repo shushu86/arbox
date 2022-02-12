@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import DetailsHeader from './DetailsHeader';
 import DetailsBody from './DetailsBody';
 import { Grid, Form, Segment } from 'semantic-ui-react';
-import { Outlet } from 'react-router-dom';
 import { StoreContext } from '../../App';
 import { observer } from 'mobx-react';
 import { runInAction } from 'mobx';
@@ -48,7 +47,6 @@ const UserDetails = observer(() => {
                 </Grid.Column>
             </Grid.Row>
         </Grid>
-        <Outlet />
         </Segment>
     )
 });

@@ -20,7 +20,7 @@ let StoreProvider;
           clubDetails: [
           {
             id: 1,
-            name: 'nam1',
+            name: '',
             description: '',
             phone: '',
             website: '',
@@ -50,7 +50,6 @@ let StoreProvider;
           }
         }));
 
-        //store.userDetails.myClubs.push() = store.clubDetails;
         return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
       })
     ) : ( StoreProvider = (({ children }) => {
