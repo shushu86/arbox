@@ -15,7 +15,7 @@ const ClubDetails = observer(() => {
             e.target.value = phoneValidation(e);
         }
         runInAction(() => {
-            store.clubDetails = { ...store.clubDetails, [e.target.name]: e.target.value };
+            store.clubDetails[0] = { ...store.clubDetails[0], [e.target.name]: e.target.value };
         });
         localStorage.setItem('arbox_details', JSON.stringify({...store,[e.target.name]: e.target.value}));
     }
@@ -28,7 +28,7 @@ const ClubDetails = observer(() => {
         return validatedValue;
     }
 
-    const { name, description, open, close, phone, website, email, imgURL } = store.clubDetails;
+    const { name, description, phone, website, email, imgURL } = store.clubDetails[0];
 
     return (
         <Segment className="mainSegment">
@@ -41,10 +41,6 @@ const ClubDetails = observer(() => {
                             <Form.Field control="input" value={name} label="Club Name" name="name" onChange={(e) => handleInputChange(e)} />
                             <Form.Field control="input" value={email} label="Email Address" name="email" onChange={(e) => handleInputChange(e)} />
                             <Form.Field control="input" value={description} label="Description" name="description" onChange={(e) => handleInputChange(e)} />
-                            <Form.Group style={{ padding: '8px' }}>
-                                <Form.Field control="input" type="time" value={open} label="Opens At" name="open" onChange={(e) => handleInputChange(e)} />
-                                <Form.Field control="input" type="time" value={close} label="Closes At" name="close" onChange={(e) => handleInputChange(e)} />
-                            </Form.Group>
                             <Form.Field control="input" type="tel" pattern="[+]{1}[0-9]{11,14}" value={phone} label="Phone" name="phone" onChange={(e) => handleInputChange(e)} />
                             <Form.Field control="input" value={website} label="Website Address" name="website" onChange={(e) => handleInputChange(e)} />
                             <Form.Field control="input" value={imgURL} label="Image URL" name="imgURL" onChange={(e) => handleInputChange(e)} />
@@ -56,8 +52,8 @@ const ClubDetails = observer(() => {
                     <div className="phoneFrame"></div>
                     <Segment className="previewSegment club">
                          <div className="preview">
-                            <DetailsHeader clubDetails={store.clubDetails} />
-                            <DetailsBody clubDetails={store.clubDetails} />
+                            <DetailsHeader clubDetails={store.clubDetails[0]} />
+                            <DetailsBody clubDetails={store.clubDetails[0]} />
                         </div>
                     </Segment>
                 </Grid.Column>

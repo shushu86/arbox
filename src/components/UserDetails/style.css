@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .detailsHeader .searchNotification {
@@ -33,17 +33,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
-.detailsBody > div:nth-child(4) {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 
-.detailsBody > div:nth-child(even) {
-    background-color: #ebe9e9;
-}
-.detailsBody > div:nth-child(odd) {
-    background-color: #e3e2e2;
-}
 .detailsBody .clubImg {
     width: 50px;
     height: 50px;
@@ -58,9 +48,10 @@
     background-color: #e3e2e2; 
 }
 
-.detailsBodyHeader {
+.detailsBodyHeader, .myClubsHeader {
     display: flex;
     align-items: center;
+    background-color: #e3e2e2;
 }
 
 .detailsBodyHeader div:nth-child(1){
@@ -82,8 +73,26 @@
     font-size: 15pt;
 }
 
+.userPersonalDetails {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.userClubDetails, .userPersonalDetails {
+    background-color: #ebe9e9;
+}
+
+.userClubDetails div:nth-child(1), .userPersonalDetails div:nth-child(1) {
+    margin-right: 10px;
+}
+.userClubDetails, .userPersonalDetails {
+    display: flex;
+    align-items: center;
+}
+
 @media only screen and (max-width: 992px) {
     .detailsHeader {
-        margin-top: 0px;
+        margin-top: -15px;
+        line-height: 10px;
     }
 }

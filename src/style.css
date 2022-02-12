@@ -48,14 +48,6 @@ i {
     background-color: rgb(95 203 128);
 }
 
-.userClubDetails div:nth-child(1), .userPersonalDetails div:nth-child(1) {
-    margin-right: 10px;
-}
-.userClubDetails, .userPersonalDetails {
-    display: flex;
-    align-items: center;
-}
-
 .ui.grid>.row>[class*="six wide"].column.phoneColumn {
     display: flex;
     justify-content: center;
@@ -111,6 +103,9 @@ i {
     max-height: 100px;
 }
 
+.preview::-webkit-scrollbar {
+    width: 5px;
+}
 
 @media only screen and (max-width: 767px) {
     .ui.container {
@@ -138,5 +133,8 @@ i {
     }
     .detailsBody {
         height: 28vh;
+    }
+    .preview {
+            width: 223px;
     }
 }

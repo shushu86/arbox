@@ -11,11 +11,11 @@ const DetailsHeader = ({ clubDetails }) => {
                 {clubDetails.name}
             </div>
             <div className="clubLabel small">
-                <div>{`Open ${clubDetails.open} - ${clubDetails.close}`}</div> 
+                <div>{clubDetails.description}</div> 
             </div>
-            <div className="clubLabel extra-small">
+            {/* <div className="clubLabel extra-small">
                 <div>{clubDetails.address}</div>
-            </div>
+            </div> */}
             <div className="clubContact">
                 <div>
                     { clubDetails.phone && 

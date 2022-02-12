@@ -17,27 +17,40 @@ let StoreProvider;
 
 !ls ? ( StoreProvider = (({ children }) => {
         const store = useLocalObservable(() => ({
-          clubDetails: {
-            name: '',
+          clubDetails: [
+          {
+            id: 1,
+            name: 'nam1',
             description: '',
-            open: '',
-            close: '',
             phone: '',
             website: '',
             email: '',
-            imgURL: ''
+            imgURL: '',
+            isActive: true
           },
+          {
+            id: 2,
+            name: 'DummyClub',
+            description: 'Bugrashov 12, Tel Aviv',
+            phone: '07733344455',
+            website: '',
+            email: '',
+            imgURL: '',
+            isActive: false
+          },
+        ],
           userDetails: {
               firstName: '',
               lastName: '',
               birthday: '',
               phone: '',
               bio: '',
-              imgURL: ''
+              imgURL: '',
+              myClubs: [1,2]
           }
         }));
 
-        //store.userDetails.myClubs = store.clubDetails;
+        //store.userDetails.myClubs.push() = store.clubDetails;
         return <StoreContext.Provider value={store}>{children}</StoreContext.Provider>
       })
     ) : ( StoreProvider = (({ children }) => {

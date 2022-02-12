@@ -68,6 +68,7 @@ a:any-link {
 .clubDetailsBody > div:nth-child(3) {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
+    height: 100px;
 }
 
 .clubDetailsBody > div:nth-child(even) {
@@ -108,7 +109,9 @@ a:any-link {
 }
 
 .clubLabel.small {
-    font-size: 15pt;
+    font-size: 12pt;
+    line-height: 22px;
+    width: 60%;
 }
 
 .clubLabel.extra-small {
@@ -124,5 +127,9 @@ a:any-link {
     .shortUnderline {
         width: 90%;
         margin: 0px 0px 0px 0%;
+    }
+
+    .clubLabel.small {
+        width: 90%;
     }
 }
